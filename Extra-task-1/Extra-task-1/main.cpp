@@ -17,4 +17,10 @@ int main() {
 	assert(fabs(hours_difference(1800, 2160) - 0.1) < DBL_EPSILON);
 	assert(fabs(hours_difference(1800, 1800) - 0.0) < DBL_EPSILON);
 	std::cout << "Проверка задания 2 пройдена" << std::endl;
+
+	assert(fabs(to_float_hours(0, 15, 0) - 0.25) < DBL_EPSILON);
+	assert(fabs(to_float_hours(2, 45, 9) - 2.7525) < DBL_EPSILON);
+	assert(fabs(to_float_hours(1, 0, 36) - 1.01) < DBL_EPSILON);
+	std::cout << "Проверка задания 3 пройдена" << std::endl;
+
 }
