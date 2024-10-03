@@ -29,4 +29,9 @@ int main() {
 	assert(fabs(to_24_hour_clock(4) - 4) < DBL_EPSILON);
 	assert(fabs(to_24_hour_clock(28.5) - 4.5) < DBL_EPSILON);
 	std::cout << "Проверка задания 4 пройдена" << std::endl;
+
+	assert(get_hourse(3800) == 1);
+	assert(get_minutes(3800) == 3);
+	assert(get_seconds(3800) == 20);
+	std::cout << "Проверка функций get_hourse, get_minutes, get_seconds пройдена" << std::endl;
 }

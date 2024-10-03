@@ -97,6 +97,20 @@ double to_24_hour_clock(double hours)
 	*/
 }
 
+int get_hourse(int seconds) {
+	assert(seconds >= 0);
+	return seconds / 3600;
+}
+
+int get_minutes(int seconds) {
+	assert(seconds >= 0);
+	return seconds / 60 - get_hourse(seconds) * 60;
+}
+
+int get_seconds(int seconds) {
+	assert(seconds >= 0);
+	return seconds - get_hourse(seconds) * 3600 - get_minutes(seconds) * 60;
+}
 /*
 	Implement three functions
 		* get_hours
