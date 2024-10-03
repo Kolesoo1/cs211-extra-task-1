@@ -14,5 +14,7 @@ int get_hourse(int seconds);
 int get_minutes(int seconds);
 
 int get_seconds(int seconds);
+
+double time_to_utc(int utc_offset, double time);
 #endif // !EXTRA_TASK_1_H
 
